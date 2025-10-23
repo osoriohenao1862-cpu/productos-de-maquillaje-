@@ -1,0 +1,54 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Integración de Páginas Web</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+		text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .button-container {
+            margin-bottom: 20px;
+        }
+ 
+        button {
+            margin: 15px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+		background-color: #E7BBFC
+;"></div>
+	
+        }
+
+        iframe {
+            width: 90%;
+            height: 600px;
+            margin-top: 20px;
+            border: 5px solid #3E1354;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Explora las siguientes páginas</h1>
+
+    <div class="button-container">
+        <button onclick="cargarPagina('file:///C:/Users/bel-s208-lt-034.UMD/Downloads/formulario.html')">Formulario</button>
+        <button onclick="cargarPagina('file:///C:/Users/bel-s208-lt-034.UMD/Downloads/juego.html')">Juego</button>
+        <button onclick="cargarPagina('file:///C:/Users/bel-s208-lt-034.UMD/Downloads/index.html')">Principal</button>
+    </div>
+
+    <iframe id="visor" src="" title="Visor de páginas"></iframe>
+
+    <script>
+        function cargarPagina(url) {
+            document.getElementById('visor').src = url;
+        }
+    </script>
+
+</body>
+</html>
